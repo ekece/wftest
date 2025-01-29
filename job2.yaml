@@ -1,0 +1,8 @@
+---
+- name: Print message from template 2
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Print message2
+      debug:
+        msg: "{{ message2 }}"
